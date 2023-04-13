@@ -136,3 +136,19 @@ console.log(returnPositive(['2', '4', '6', '-2']));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//I chose a codewarschallenge that was to find whether the shape is a cube.
+
+var cubeChecker = function(volume, side) {
+  if(side <= 0 || volume <= 0) {              // this if statement checks if either the side or volue is less than 0 because the 
+    return false;                             // instructions label that as an invalid number, and want to return false.
+  } else if( side * side * side !== volume) {  //i also researched another method that used Math.pow(side.3), which does the same 
+    return false;                              // thing as side * side * side. 
+  }else {                                      //If both of these if and else if are not run because the parameters I have set up dont apply
+    return true;                              // then the else statement will be run last and return true.
+  }                                           // I then checked the answer with a console.log of the variable we created that holds the functiont.t
+}
+
+console.log(cubeChecker(27, 3));   //should be true.
+console.log(cubeChecker( 190, 6));  // should be false.
+console.log(cubeChecker(125, 5));   // should be true.
