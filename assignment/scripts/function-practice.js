@@ -73,6 +73,9 @@ function find( value, array ){
     } return false;
 
 }
+
+//includes -- is the built in array method
+
 let bagel = [];
 let dinish = ['reddead', 'Way', 'gallupmalone', 'butler'];
 console.log(find('Way', dinish  ));
