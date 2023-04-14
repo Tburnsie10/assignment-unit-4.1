@@ -146,7 +146,7 @@ var cubeChecker = function(volume, side) {
     return false;                              // thing as side * side * side. 
   }else {                                      //If both of these if and else if are not run because the parameters I have set up dont apply
     return true;                              // then the else statement will be run last and return true.
-  }                                           // I then checked the answer with a console.log of the variable we created that holds the functiont.t
+  }                                           // I then checked the answer with a console.log of the variable we created that holds the functiont.
 }
 
 console.log(cubeChecker(27, 3));   //should be true.
